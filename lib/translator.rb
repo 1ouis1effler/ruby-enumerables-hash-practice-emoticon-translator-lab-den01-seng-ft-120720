@@ -17,9 +17,8 @@ end
 
 def get_japanese_emoticon(emoticon_file, emoticon)
   emoticon_lib = load_library(emoticon_file)
-  #binding.pry
   emoticon_lib.each do | key, value |
-     emoticon_lib
+     emoticon_lib.keys.find 
     binding.pry
   end 
   japanese_emoticon = emoticon_lib['get_emoticon'][emoticon]
