@@ -31,5 +31,5 @@ def get_english_meaning(emoticon_file, emoticon)
     #binding.pry
   end 
   english_meaning ? emoticon_lib[english_meaning][:english]: 'Sorry, that emoticon was not found'
-  #binding.pry
+  binding.pry
 end
