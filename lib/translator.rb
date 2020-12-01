@@ -30,5 +30,5 @@ def get_english_meaning(emoticon_file, emoticon)
     emoticon_lib[key][:japanese] == emoticon 
     #binding.pry
   end 
-  english_emoticon ? emoticon_lib[english_emoticon][:english]: 'Sorry, that emoticon was not found'
+  english_emoticon ? emoticon_lib[key][:english]: 'Sorry, that emoticon was not found'
 end
