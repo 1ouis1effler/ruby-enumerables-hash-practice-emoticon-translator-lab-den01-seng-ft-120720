@@ -26,7 +26,8 @@ end
 
 def get_english_meaning(emoticon_file, emoticon)
   emoticon_lib = load_library(emoticon_file)
-  #binding.pry
-  english_meaning = emoticon_lib['get_meaning'][emoticon]
+  english_emoticon = emoticon_lib.keys.find do |key|
+    emo
+  english_meaning = emoticon_lib[english_meaning][:english]
   english_meaning ? english_meaning : 'Sorry, that emoticon was not found'
 end
